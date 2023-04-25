@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+body {
+    background: #678aca;
+    font-family: tahoma;
+    text-transform: uppercase;
+    color: #195eff;
+}
+
+.container {
+    background: #fff;
+    width: 100%;
+    margin: 40px auto;
+    box-shadow: 0px 0px 20px 0px #444;
+    position: relative;
+}
+
+.container header {
+    overflow: hidden;
+    padding: 15px;
+}
+
+.container header .logo {
+    float: left;
+    cursor: pointer;
+}
+
+.container header .logo img {
+    width: 50px;
+}
+
+.container header h1 {
+    float: right;
+    margin-left: 15px;
+    font-weight: 356
+}
+
+.container header ul {
+    padding: 0;
+    list-style: none;
+}
+
+.container header ul li {
+    float: right;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.container section {
+    text-align: center;
+}
+
+.container section img {
+    width: 150px;
+}
+
+.container section p {
+    letter-spacing: 8px;
+    font-weight: 100;
+
+}
+
+.container section p:nth-of-type(1) {
+    font-size: 70px;
+    margin: 0;
+}
+
+.container section p:nth-of-type(2) {}
+
+.container section form {
+    display: inline-block;
+    margin: 150px auto 80px;
+}
+
+.container section form input[type="submit"] {
+    float: right;
+    padding: 10px;
+    background: #678aca;
+    color: #fff;
+    border: 2px solid #678aca;
+    cursor: pointer;
+}
+
+.container section form input[type="email"] {
+    padding: 10px;
+    border: 2px solid #678aca;
+    width: 250px;
+}
+
+.container section img {
+    opacity: .6;
+}
+
+.container section img:nth-of-type(2) {
+    width: 160px;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+
+.container section img:nth-of-type(3) {
+    width: 160px;
+    position: absolute;
+    top: 60%;
+    right: 10%;
+}

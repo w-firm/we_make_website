@@ -1,0 +1,95 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over">
+    <h1>Ravi Patel</h1>
+    <hr />
+    <nav>
+      <a routerLink=" home" (click)="clickHandler()" routerLinkActive="active">Home</a>
+      <a routerLink="about" (click)="clickHandler()" routerLinkActive="active">About</a>
+      <a routerLink="services" (click)="clickHandler()" routerLinkActive="active">Services</a>
+      <a routerLink="portfolio" (click)="clickHandler()" routerLinkActive="active">Portfolio</a>
+      <a routerLink="gallery" (click)="clickHandler()" routerLinkActive="active">Gallery</a>
+      <a routerLink="contact" (click)="clickHandler()" routerLinkActive="active">Contact</a>
+    </nav>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <header>
+        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        <h1>Ravi Patel</h1>
+        <nav>
+          <a routerLink="home" routerLinkActive="active">Home</a>
+          <a routerLink="about" routerLinkActive="active">About</a>
+          <a routerLink="services" routerLinkActive="active">Services</a>
+          <a routerLink="portfolio" routerLinkActive="active">Portfolio</a>
+          <a routerLink="gallery" routerLinkActive="active">Gallery</a>
+          <a routerLink="contact" routerLinkActive="active">Contact</a>
+        </nav>
+      </header>
+    </mat-toolbar>
+    <section>
+      <router-outlet></router-outlet>
+    </section>
+
+
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h1>Ravi Patel</h1>
+            <div class="footer-about">
+              <p>We Make WebSite, UiUx Design, Graphic Design, Digital Ideas SEO Marketing </p>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="useful-link">
+              <h2>Useful Links</h2>
+              <div class="use-links">
+                <li><a routerLink="home"><i class="fa-solid fa-angles-right"></i> Home</a></li>
+                <li><a routerLink="about"><i class="fa-solid fa-angles-right"></i> About</a></li>
+                <li><a routerLink="services"><i class="fa-solid fa-angles-right"></i> Services</a></li>
+                <li><a routerLink="portfolio"><i class="fa-solid fa-angles-right"></i> Portfolio</a></li>
+                <li><a routerLink="gallery"><i class="fa-solid fa-angles-right"></i> Gallery</a></li>
+                <li><a routerLink="contact"><i class="fa-solid fa-angles-right"></i> Contact</a></li>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+              <li><a href=""><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+              <li><a href=""><i class="fa-brands fa-linkedin-in"></i> Linkedin</a></li>
+            </div>
+
+
+          </div>
+          <div class="col-md-3">
+            <div class="address">
+              <h2>Address</h2>
+              <div class="address-links">
+                <li class="address1"><i class="fa-solid fa-location-dot"></i> Vishwas City 1, Chanakyapuri, Ahmedabad,
+                  Gujarat</li>
+                <li><a href=""><i class="fa-solid fa-phone"></i> +91 7874209264</a></li>
+                <li><a href=""><i class="fa-solid fa-envelope"></i> markanaravi876@gmail.com</a></li>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- <section id="copy-right"> -->
+    <div class="full">
+      <div class="copy-right-sec"><i class="fa-solid fa-copyright"></i>
+        Copyright © 2023 Ravi Patel Pvt. Ltd. All rights reserved
+      </div>
+    </div>
+    <!-- </section> -->
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
